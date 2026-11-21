@@ -1,0 +1,38 @@
+// ✏️ EDIT YOUR CONTENT HERE — the 3D scene builds itself from this list.
+// type: intro | photo | exp | project | contact   (one scroll "stop" per item)
+const GH = 'https://github.com/kv-creates/';
+export const STOPS = [
+ {type:'intro',k:'00 — INTRO',title:'Krishna Vishwakarma',sub:'AI/ML Developer · Creative Technologist · Full-Stack Developer',
+  body:'Building at the intersection of intelligence, technology and imagination.'},
+ {type:'photo',k:'01 — ABOUT',title:'About',sub:'Navi Mumbai, India · BSc AI & ML',
+  body:'Second-year BSc AI/ML student, developer and creative technologist. I build independent projects that go beyond conventional implementations: intelligent systems, developer tools, interactive applications, automation and experimental creative work.'},
+ {type:'exp',k:'02 — EDUCATION',title:'Pillai College of Arts, Commerce & Science',sub:'BSc Artificial Intelligence & Machine Learning · 2025 — Present',
+  body:'Exploring machine learning, AI, programming and software development.'},
+ {type:'exp',k:'03 — INTERNSHIP',title:'Website Designing & AI in Web Design',sub:'Web Design Intern · Summer 2026',
+  body:'Worked on website design and explored integrating AI into web development. Deployed a live site.',
+  links:[['krishna1774.netlify.app','https://krishna1774.netlify.app']]},
+ {type:'exp',k:'04 — GRAPHICS',title:'PCACS Management Association',sub:'Graphics Team Member · 2026 — Present',
+  body:'Visual communication, creative direction and promotional design for institutional events.'},
+ {type:'exp',k:'05 — SCHOOL',title:'DPVN School, Belapur',sub:'Higher Secondary (CBSE XII) · 2025',
+  body:'Science stream with computer science.'},
+ {type:'project',k:'06 — PROJECT',title:'ORBITALIS',sub:'Space Technology · AI · Orbital Mechanics',
+  body:'Space debris tracking and collision avoidance system.',tags:['AI','Orbital Mechanics'],links:[['GitHub',GH+'ORBITALIS']]},
+ {type:'project',k:'07 — PROJECT',title:'KV-13',sub:'AI · LLM · Developer Tools',
+  body:'Autonomous code intelligence and AI-assisted development system.',tags:['LLM','DevTools'],links:[['Live','https://kv-13.netlify.app']]},
+ {type:'project',k:'08 — PROJECT',title:'SonicPrint',sub:'Audio Processing · Signal Analysis · ML',
+  body:'Audio fingerprinting system for identifying and analysing audio patterns.',tags:['Audio','ML'],links:[['GitHub',GH+'SonicPrint-Audio-Fingerprinting']]},
+ {type:'project',k:'09 — PROJECT',title:'Neo IoT Mesh',sub:'Real-time IoT infrastructure',
+  body:'Interconnected IoT infrastructure with real-time communication and monitoring.',tags:['MQTT','WebSocket','Redis','InfluxDB','Grafana'],links:[['GitHub',GH+'neo-iot-mesh']]},
+ {type:'project',k:'10 — PROJECT',title:'ZK Credential Registry',sub:'Blockchain · Zero-Knowledge Proofs',
+  body:'Decentralized identity and zero-knowledge credential verification.',tags:['Blockchain','ZKP','Cryptography'],links:[['GitHub',GH+'ZK-Credential-Registry']]},
+ {type:'project',k:'11 — PROJECT',title:'Plant Disease Detector',sub:'Python · Computer Vision',
+  body:'Computer vision project that identifies plant diseases from images.',tags:['Python','CV','ML'],links:[['GitHub',GH+'plant-disease-detector']]},
+ {type:'project',k:'12 — PROJECT',title:'SurakshaPath',sub:'AI · Geospatial · Route Optimization',
+  body:'Night-safety-oriented routing system exploring safer navigation.',tags:['AI','Geospatial'],links:[['GitHub',GH+'SurakshaPath-NightSafety-Router']]},
+ {type:'project',k:'13 — PROJECT',title:'GameMind QA',sub:'Vision Transformers · PPO · Unity · Unreal · Godot',
+  body:'Experimental automated game-testing concept combining vision models and reinforcement learning.',tags:['ViT','RL'],links:[['GitHub',GH+'GameMind-Automated-QA']]},
+ {type:'contact',k:'14 — CONTACT',title:"Let's build something.",sub:'Open to collaborations and experiments',
+  body:'More work lives on GitHub: TouchSpeak-AAC, MergeKit-CRDT-Sync, Nexus Protocol, Astrochem-Net, ExoVet, LLM Forge and more.',
+  links:[['GitHub','https://github.com/kv-creates'],['Instagram','https://instagram.com/rec._.bykv'],['Personal AI','https://krishna1774.netlify.app'],
+         ['Email','mailto:kv04.krishna@gmail.com'],['LinkedIn','https://www.linkedin.com/in/krishnakvv/']]}
+];

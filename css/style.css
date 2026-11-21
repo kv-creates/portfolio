@@ -1,0 +1,25 @@
+:root{--bg:#101110;--c:#252925;--olive:#78816d;--stone:#b3aa96;--ink:#e5e1d8}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--bg);color:var(--ink);font-family:"Helvetica Neue",Arial,sans-serif}
+#stage{position:fixed;inset:0}
+#scroll{height:1500vh}
+#grain{position:fixed;inset:-50%;pointer-events:none;opacity:.07;z-index:5;animation:g .6s steps(3) infinite;
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes g{to{transform:translate(-3%,2%)}}
+#hud{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:22px 28px;font:12px "Courier New",monospace;letter-spacing:.2em;color:var(--stone);z-index:6}
+#bar{position:fixed;right:0;top:0;width:3px;height:0;background:var(--olive);z-index:6}
+#hint{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);font:11px "Courier New",monospace;letter-spacing:.3em;color:var(--olive);z-index:6;animation:b 2s infinite}
+@keyframes b{50%{opacity:.3}}
+.panel{position:fixed;top:50%;width:min(440px,86vw);z-index:6;opacity:0;pointer-events:none;transition:opacity .2s}
+.panel.l{left:6vw}.panel.r{right:6vw}
+.panel.hero{left:6vw;width:min(900px,88vw)}
+.panel .k{font:12px "Courier New",monospace;letter-spacing:.25em;color:var(--olive);margin-bottom:14px}
+.panel h2{font-weight:600;font-size:clamp(28px,4vw,48px);line-height:1.05;letter-spacing:-.02em;margin-bottom:10px}
+.panel.hero h2{font-size:clamp(40px,9vw,120px);text-transform:uppercase;line-height:.92;font-weight:700}
+.panel .sub{color:var(--stone);font-size:15px;margin-bottom:14px}
+.panel p{line-height:1.6;font-size:15px;color:#c9c5ba;margin-bottom:16px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tags span{font:11px "Courier New",monospace;border:1px solid var(--olive);color:var(--stone);padding:4px 9px}
+.panel a{display:inline-block;margin:0 14px 8px 0;color:var(--ink);font:13px "Courier New",monospace;letter-spacing:.08em;text-decoration:none;border-bottom:1px solid var(--olive);padding-bottom:2px}
+.panel a:hover{color:var(--stone)}
+@media(max-width:700px){.panel{top:auto;bottom:70px;transform:none!important;left:6vw!important;right:auto!important;padding:18px;background:rgba(16,17,16,.72)}.panel.hero{background:none}}
